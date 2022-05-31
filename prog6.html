@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num=prompt("Enter lowest number: ");
+        var num1=prompt("Enter highest number: ");
+        var ar=[];
+        var p=0;
+        for(i=num;i<=num1;i++)
+        {
+            var flag=0;
+            for(var j=2;j<i/2;j++)
+            {
+                if(i%j==0)
+                {
+                    flag=1;
+                    break;
+                }
+            }
+            if(j>1 && flag==0)
+            a[p++]=i;
+
+        }
+        var k=0;
+        while(k<a.length)
+        {
+            document.write(a[k]);
+            k++;
+        }
+    </script>
+</body>
+</html>
