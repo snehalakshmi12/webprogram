@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function3</title>
+</head>
+<body>
+    <script>
+        const myFunction=(num) =>{
+            return num*10;
+
+        }
+        const num=[];
+        var size=(Number(prompt("Enter the array size")));
+        for(var i=0;i<size;i++)
+        {
+            num.push(Number(prompt("Enter the element"+(i+1))));
+        }
+        const a=num.map(myFunction);
+        document.write(a);
+
+        </script>
+</body>
+</html>
