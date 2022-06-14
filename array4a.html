@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function checkleapyr( year)
+    {
+        if(year%400==0)
+        {
+          document.write(year+"  LEAP YEAR"+"<br/>"); 
+          return; 
+        }
+        else if(year%100==0)
+        {
+            document.write(year+" LEAP YEAR"+"<br/>");
+            return; 
+        }
+        else if(year%4==0)
+        {
+            document.write(year+" LEAP YEAR"+"<br/>");
+            return;
+
+        }
+        else
+        {
+            
+            return;
+
+        }
+    }
+        var start=prompt("enter the start year");
+        var end =prompt("enter the end year");
+        for(var i=start;i<end;i++)
+        {
+            
+            checkleapyr(i);
+        }
+    </script>
+</body>
+</html>
