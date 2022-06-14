@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printFarmInventory(cows, chickens) {
+  var cowString = String(cows);
+  while(cowString.length < 3)
+    cowString = "0" + cowString;
+  document.write(cowString + " Cows");
+//   document.write("<br>");
+  
+  var chickenString = String(chickens);
+  while(chickenString.length < 3)
+    chickenString = "0" + chickenString;
+  document.write(chickenString + " Chickens");
+}
+
+let cow=prompt("Enter the number of cows:");
+var cows=parseInt(cow);
+let chicken=prompt("Enter the number of chickens:");
+var chickens=parseInt(chicken);
+
+// printFarmInventory(7, 11);
+printFarmInventory(cows,chickens);
+    </script>
+</body>
+</html>
